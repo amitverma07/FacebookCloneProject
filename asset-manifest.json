@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.js": "/FacebookCloneProject/static/js/main.493f9290.chunk.js",
+    "main.js.map": "/FacebookCloneProject/static/js/main.493f9290.chunk.js.map",
+    "runtime-main.js": "/FacebookCloneProject/static/js/runtime-main.aad05fa3.js",
+    "runtime-main.js.map": "/FacebookCloneProject/static/js/runtime-main.aad05fa3.js.map",
+    "index.html": "/FacebookCloneProject/index.html",
+    "precache-manifest.cf84041996c2018837908f5ab7cdef98.js": "/FacebookCloneProject/precache-manifest.cf84041996c2018837908f5ab7cdef98.js",
+    "service-worker.js": "/FacebookCloneProject/service-worker.js"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.aad05fa3.js",
+    "static/js/main.493f9290.chunk.js"
+  ]
+}
