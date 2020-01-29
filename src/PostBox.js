@@ -6,45 +6,37 @@ class PostBox extends Component {
     super(props);
     this.state = {
       // value: []
-      
+
       items: [
-      // {
-      //   "id": 1,
-      // },
-      // {
-      //   "id": 2,
-      // },
-      // {
-      //   "id": 3,
-      // },
-      // {
-      //   "id": 4,
-      // },
-      // {
-      //   "id": 5,
-      // },
-      // {
-      //   "id": 6,
-      // },
-      // {
-      //   "id": 7,
-      // }
-    ],
-    term: "",
+        // {
+        //   "id": 1,
+        // },
+        // {
+        //   "id": 2,
+        // },
+        // {
+        //   "id": 3,
+        // },
+        // {
+        //   "id": 4,
+        // },
+        // {
+        //   "id": 5,
+        // },
+        // {
+        //   "id": 6,
+        // },
+        // {
+        //   "id": 7,
+        // }
+      ],
+      term: "",
     };
-    //creating ref
-    // this.textInput = React.createRef();
   }
 
   handleChange = (e) => {
     this.setState({ term: e.target.value });
   }
-
-  // handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   console.log(this.textInput.current.value);
-  //   this.setState({value:this.textInput.current.value})
-  // }
 
   handleSubmit = (e) => {
     e.preventDefault();
@@ -59,7 +51,7 @@ class PostBox extends Component {
     return (
       <React.Fragment>
         <div className="container">
-          <div class="d-flex justify-content-center">
+          <div className="d-flex justify-content-center">
             <div className="col-md-6">
               <div className="row">
                 <div className="col-md-12">
@@ -111,7 +103,7 @@ class PostBox extends Component {
                 </div>
               </div>
               <br />
-              <Posts type={this.state.items}/>
+              <Posts type={this.state.items} />
             </div>
           </div>
         </div>

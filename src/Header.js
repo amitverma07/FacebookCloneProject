@@ -27,13 +27,13 @@ function Header() {
               </a>
             </li>
           </ul>
-          <div class="col-md-3 mt-3">
-          <select class="custom-select">
-            <option>Filter User</option>
-            <option>Sort User</option>
-          </select>
-        </div>
-          <Selector/>
+          <div className="col-md-3 mt-3">
+            <select className="custom-select">
+              <option>Filter User</option>
+              <option>Sort User</option>
+            </select>
+          </div>
+          <Selector />
         </div>
       </nav>
     </React.Fragment>

@@ -8,8 +8,8 @@ class Selector extends Component {
   render() {
     return (
       <React.Fragment>
-        <div class="col-md-3 mt-3">
-          <select class="custom-select">
+        <div className="col-md-3 mt-3">
+          <select className="custom-select">
             <option>Amit</option>
             <option>Jawad</option>
             <option>Dhruv</option>
