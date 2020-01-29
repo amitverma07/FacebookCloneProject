@@ -6,8 +6,31 @@ class PostBox extends Component {
     super(props);
     this.state = {
       // value: []
-      term: "",
-      items: []
+      
+      items: [
+      // {
+      //   "id": 1,
+      // },
+      // {
+      //   "id": 2,
+      // },
+      // {
+      //   "id": 3,
+      // },
+      // {
+      //   "id": 4,
+      // },
+      // {
+      //   "id": 5,
+      // },
+      // {
+      //   "id": 6,
+      // },
+      // {
+      //   "id": 7,
+      // }
+    ],
+    term: "",
     };
     //creating ref
     // this.textInput = React.createRef();
@@ -55,7 +78,7 @@ class PostBox extends Component {
                           <div className="col-md-2 ml-5">
                             <button className="btn btn-primary mt-1" style={{ marginLeft: '300px', marginBottom: '-15px' }} type="submit" value="Submit">
                               Post
-                        </button>
+                            </button>
                           </div>
                         </form>
                       </div>

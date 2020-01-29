@@ -1,12 +1,26 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import StaticPost from './StaticPost';
+//import Comment from './Comment';
 
 class Posts extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      date: new Date().toLocaleString()
+      date: new Date().toLocaleString(),
+      count: 0
     };
+  }
+
+  handleLikesClick=()=>{
+    this.setState(preState => {return{count: preState.count + 1}});
+  }
+
+  handleCommentClick=()=>{ 
+    return(
+      <>
+      <input type="text"/>
+      </>
+    )
   }
 
   render() {
@@ -30,19 +44,19 @@ class Posts extends Component {
                   <div className="row">
                     <div className="col-md-12">
                       <div style={{ textAlign: 'right' }}>
-                        <span style={{ marginRight: '24px' }}>1 Comment 13 Likes</span>
+                        <span style={{ marginRight: '24px' }}> Comment {this.state.count} Like</span>
                       </div>
                     </div>
                   </div>
                   <hr />
                   <div className="row" style={{ marginLeft: '0px' }}>
                     <div className="col-md-3">
-                      <button className="btn btn-light">
+                      <button className="btn btn-light" onClick={this.handleLikesClick}>
                         <span className="glyphicon glyphicon-thumbs-up text-primary"></span> Like
                 </button>
                     </div>
                     <div className="col-md-3">
-                      <button className="btn btn-light">
+                      <button className="btn btn-light" onClick={this.handleCommentClick}>
                         <span className="glyphicon glyphicon-comment text-primary"></span> Comment
                 </button>
                     </div>
