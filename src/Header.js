@@ -1,4 +1,5 @@
 import React from 'react';
+import Selector from './Selector';
 
 function Images(props) {
   return (<img src="./facebooklogo.PNG" style={props.style} alt="logoimage" />);
@@ -25,11 +26,14 @@ function Header() {
                 Amit
               </a>
             </li>
-            <li className="nav-item active">
-              <a className="nav-link font-weight-bold pl-5" href="#h" style={{ color: '#fff' }}>Home</a>
-            </li>
           </ul>
-          <button className="btn btn-lg mt-2"><span className="glyphicon glyphicon-triangle-bottom"></span></button>
+          <div class="col-md-3 mt-3">
+          <select class="custom-select">
+            <option>Filter User</option>
+            <option>Sort User</option>
+          </select>
+        </div>
+          <Selector/>
         </div>
       </nav>
     </React.Fragment>

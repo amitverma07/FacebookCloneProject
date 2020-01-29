@@ -50,8 +50,6 @@ class PostBox extends Component {
                       </div>
                       <div className="col-md-10">
                         <form onSubmit={this.handleSubmit} id="form">
-                          {/* <input type='text' className="form-control" style={{ height: '150px' }} placeholder="What's on your mind, Amit?" ref={this.textInput}>
-                    </input> */}
                           <textarea className="form-control" onChange={this.handleChange} placeholder="What's on your mind, Amit?">
                           </textarea>
                           <div className="col-md-2 ml-5">
@@ -60,39 +58,30 @@ class PostBox extends Component {
                         </button>
                           </div>
                         </form>
-                        {/* <textarea className="form-control" ref={this.textInput} placeholder="What's on your mind, Amit?"></textarea> */}
                       </div>
                     </div>
                     <hr />
-
                     <div className="row" style={{ marginLeft: '0px' }}>
-
                       <div className="col-md-3">
                         <button className="btn btn-light">
                           <span className="glyphicon glyphicon-picture text-success"></span> Photo/video
                   </button>
                       </div>
-
                       <div className="col-md-3">
                         <button className="btn btn-light">
                           <span className="glyphicon glyphicon-user text-primary"></span> Tag Friends
                   </button>
                       </div>
-
                       <div className="col-md-3">
                         <button className="btn btn-light">
                           <span className="glyphicon glyphicon-heart text-danger"></span> Feeling
                   </button>
-
                       </div>
-
                       <div className="col-md-3">
                         <button className="btn btn-light">
                           <span className="glyphicon glyphicon-map-marker text-danger"></span> Check In
                   </button>
-
                       </div>
-
                     </div>
                     <br />
                   </div>
