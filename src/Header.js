@@ -22,7 +22,7 @@ function Header() {
             <li className="nav-item ">
               <a className="nav-link font-weight-bold" href="#hh" style={{ color: '#fff' }}>
                 <img src="./amit.jpg" className="rounded-circle" alt="images" style={{ width: '22px', marginRight: '7px' }} />
-                Amit
+                Amit Verma
               </a>
             </li>
           </ul>

@@ -4,13 +4,11 @@ class Selector extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      // key: this.props.usersData.id,
       currentUser: ''
     }
   }
 
   handleChange = (e) => {
-    // this.setState({ currentUser: e.target.value });
     this.props.whichUser(e.target.value);
     console.log(this.state.currentUser)
   }

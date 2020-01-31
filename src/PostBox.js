@@ -21,18 +21,18 @@ class PostBox extends Component {
     };
   }
 
-  
-  displayDate = () => {
-    return new Date().toLocaleString()
-  }
+
+  // displayDate = () => {
+  //   return new Date().toLocaleString()
+  // }
 
   handleLikesClick = () => {
     this.setState(preState => { return { count: preState.count + 1 } });
   }
 
   handleEmojiClick = () => {
-  this.setState(preState => { return { counts: preState.counts + 1 } });
-}
+    this.setState(preState => { return { counts: preState.counts + 1 } });
+  }
 
 
   currentUser = (input) => {
@@ -75,7 +75,7 @@ class PostBox extends Component {
                       </div>
                       <div className="col-md-10">
                         <form onSubmit={this.handleSubmit} id="form">
-                          <textarea className="form-control" onChange={this.handleChange} placeholder="What's on your mind, Amit?">
+                          <textarea className="form-control" onChange={this.handleChange} placeholder="What's on your mind?">
                           </textarea>
                           <div className="col-md-2 ml-5">
                             <button className="btn btn-primary mt-1" style={{ marginLeft: '300px', marginBottom: '-15px' }} type="submit" value="Submit">
@@ -90,22 +90,22 @@ class PostBox extends Component {
                       <div className="col-md-3">
                         <button className="btn btn-light">
                           <span className="glyphicon glyphicon-picture text-success"></span> Photo/video
-                  </button>
+                        </button>
                       </div>
                       <div className="col-md-3">
                         <button className="btn btn-light">
                           <span className="glyphicon glyphicon-user text-primary"></span> Tag Friends
-                  </button>
+                        </button>
                       </div>
                       <div className="col-md-3">
                         <button className="btn btn-light">
                           <span className="glyphicon glyphicon-heart text-danger"></span> Feeling
-                  </button>
+                        </button>
                       </div>
                       <div className="col-md-3">
                         <button className="btn btn-light">
                           <span className="glyphicon glyphicon-map-marker text-danger"></span> Check In
-                  </button>
+                        </button>
                       </div>
                     </div>
                     <br />
@@ -113,7 +113,7 @@ class PostBox extends Component {
                 </div>
               </div>
               <br />
-              <Posts type={this.state.items} userName={this.state.whoIsPosting} dateDisplay={this.displayDate} heartCount={this.state.counts} likeCount={this.state.count} likeFun={this.handleLikesClick} emojiClick={this.handleEmojiClick} />
+              <Posts type={this.state.items} userName={this.state.whoIsPosting} heartCount={this.state.counts} likeCount={this.state.count} likeFun={this.handleLikesClick} emojiClick={this.handleEmojiClick} key={this.state.users.id} />
             </div>
           </div>
         </div>
