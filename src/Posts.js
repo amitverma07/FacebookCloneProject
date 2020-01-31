@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import StaticPost from './StaticPost';
+import Comment from './Comment'
 
 class Posts extends Component {
   constructor(props) {
@@ -7,9 +8,9 @@ class Posts extends Component {
     this.state = {
       counts: 0,
       count: 0,
-      toggleComment: false,
-      commentPosts: '',
-      commentData: [],
+      // toggleComment: false,
+      // commentPosts: '',
+      // commentData: [],
     };
   }
 
@@ -25,33 +26,33 @@ class Posts extends Component {
   this.setState(preState => { return { counts: preState.counts + 1 } });
 }
 
-  handleCommentClick = () => {
-    this.setState({ toggleComment: true });
-  }
+  // handleCommentClick = () => {
+  //   this.setState({ toggleComment: true });
+  // }
 
-  handleCommentSubmit = (e) => {
-    e.preventDefault();
-    this.setState({ commentData: this.state.commentPosts });
-    document.getElementById("resets").reset();
-  }
+  // handleCommentSubmit = (e) => {
+  //   e.preventDefault();
+  //   this.setState({ commentData: this.state.commentPosts });
+  //   document.getElementById("resets").reset();
+  // }
 
-  handleChanges = (e) => {
-    this.setState({ commentPosts: e.target.value });
-  }
+  // handleChanges = (e) => {
+  //   this.setState({ commentPosts: e.target.value });
+  // }
 
   render() {
-    const toggleComments = this.state.toggleComment;
-    let button;
-    if (toggleComments) {
-      button = <form id="resets">
-        <input type="text" onChange={this.handleChanges} className="form-control mt-3 mb-0" style={{ minWidth: "525px", marginLeft: "-150PX" }}></input>
-        <button className="btn btn-primary mt-2" style={{ marginLeft: "285px", marginBottom: "-15px" }} type="button" onClick={this.handleCommentSubmit}>Post</button>
-      </form>
-    }
+    // const toggleComments = this.state.toggleComment;
+    // let button;
+    // if (toggleComments) {
+    //   button = <form id="resets">
+    //     <input type="text" onChange={this.handleChanges} className="form-control mt-3 mb-0" style={{ minWidth: "525px", marginLeft: "-150PX" }}></input>
+    //     <button className="btn btn-primary mt-2" style={{ marginLeft: "285px", marginBottom: "-15px" }} type="button" onClick={this.handleCommentSubmit}>Post</button>
+    //   </form>
+    // }
 
     return (
       <React.Fragment>
-
+      
         {this.props.type.map(elem => {
           return (
 
@@ -87,13 +88,14 @@ class Posts extends Component {
                         <span className="glyphicon glyphicon-heart text-danger"></span> Heart
                       </button>
                     </div>
-                    <div className="col-md-3">
+                    {/* <div className="col-md-3">
                       <button className="btn btn-light" onClick={this.handleCommentClick}>
                         <span className="glyphicon glyphicon-comment text-primary"></span> Comment
                       </button>
                       {button}
                       <p>{this.state.commentData}</p>
-                    </div>
+                    </div> */}
+                    <Comment/>
                   </div>
                   <br />
                 </div>
