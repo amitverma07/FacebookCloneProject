@@ -15,9 +15,25 @@ class PostBox extends Component {
         { name: "Jasmeet", id: 4 },
         { name: "Christian", id: 5 },
       ],
+      counts: 0,
+      count: 0,
       whoIsPosting: ''
     };
   }
+
+  
+  displayDate = () => {
+    return new Date().toLocaleString()
+  }
+
+  handleLikesClick = () => {
+    this.setState(preState => { return { count: preState.count + 1 } });
+  }
+
+  handleEmojiClick = () => {
+  this.setState(preState => { return { counts: preState.counts + 1 } });
+}
+
 
   currentUser = (input) => {
     console.log(input)
@@ -97,7 +113,7 @@ class PostBox extends Component {
                 </div>
               </div>
               <br />
-              <Posts type={this.state.items} userName={this.state.whoIsPosting}/>
+              <Posts type={this.state.items} userName={this.state.whoIsPosting} dateDisplay={this.displayDate} heartCount={this.state.counts} likeCount={this.state.count} likeFun={this.handleLikesClick} emojiClick={this.handleEmojiClick} />
             </div>
           </div>
         </div>
