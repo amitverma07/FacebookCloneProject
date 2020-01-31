@@ -19,4 +19,4 @@
 - Bootstrap
 - HTML
 
-![srceen shot](https://raw.githubusercontent.com/amitverma07/FacebookCloneProject/master/Capture.PNG)
+![srceen shot](https://raw.githubusercontent.com/amitverma07/FacebookCloneProject/master/capture.PNG)
