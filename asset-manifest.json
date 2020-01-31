@@ -1,15 +1,19 @@
 {
   "files": {
-    "main.js": "/FacebookCloneProject/static/js/main.493f9290.chunk.js",
-    "main.js.map": "/FacebookCloneProject/static/js/main.493f9290.chunk.js.map",
+    "main.js": "/FacebookCloneProject/static/js/main.88eabe5b.chunk.js",
+    "main.js.map": "/FacebookCloneProject/static/js/main.88eabe5b.chunk.js.map",
     "runtime-main.js": "/FacebookCloneProject/static/js/runtime-main.aad05fa3.js",
     "runtime-main.js.map": "/FacebookCloneProject/static/js/runtime-main.aad05fa3.js.map",
+    "static/js/2.6bcbe5d8.chunk.js": "/FacebookCloneProject/static/js/2.6bcbe5d8.chunk.js",
+    "static/js/2.6bcbe5d8.chunk.js.map": "/FacebookCloneProject/static/js/2.6bcbe5d8.chunk.js.map",
     "index.html": "/FacebookCloneProject/index.html",
-    "precache-manifest.cf84041996c2018837908f5ab7cdef98.js": "/FacebookCloneProject/precache-manifest.cf84041996c2018837908f5ab7cdef98.js",
-    "service-worker.js": "/FacebookCloneProject/service-worker.js"
+    "precache-manifest.f0bfb220e08c763572fe4f860fe31d04.js": "/FacebookCloneProject/precache-manifest.f0bfb220e08c763572fe4f860fe31d04.js",
+    "service-worker.js": "/FacebookCloneProject/service-worker.js",
+    "static/js/2.6bcbe5d8.chunk.js.LICENSE": "/FacebookCloneProject/static/js/2.6bcbe5d8.chunk.js.LICENSE"
   },
   "entrypoints": [
     "static/js/runtime-main.aad05fa3.js",
-    "static/js/main.493f9290.chunk.js"
+    "static/js/2.6bcbe5d8.chunk.js",
+    "static/js/main.88eabe5b.chunk.js"
   ]
 }
