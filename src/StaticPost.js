@@ -1,6 +1,7 @@
 import React from 'react'
 import Comment from './Comment'
 
+//Creates posts by getting data as props from posts.js
 function StaticPost(props) {
   return (
     <>

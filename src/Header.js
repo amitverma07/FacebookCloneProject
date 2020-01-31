@@ -4,6 +4,7 @@ function Images(props) {
   return (<img src="./facebooklogo.PNG" style={props.style} alt="logoimage" />);
 }
 
+//Creates Navbar
 function Header() {
   return (
     <React.Fragment>
@@ -37,5 +38,4 @@ function Header() {
     </React.Fragment>
   );
 }
-
 export default Header;

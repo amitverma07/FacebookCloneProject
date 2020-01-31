@@ -8,6 +8,7 @@ class PostBox extends Component {
     this.state = {
       items: [],
       term: "",
+      //for selecting users
       users: [
         { name: "Amit Verma", id: 1 },
         { name: "Dhruv", id: 2 },
@@ -15,35 +16,37 @@ class PostBox extends Component {
         { name: "Jasmeet", id: 4 },
         { name: "Christian", id: 5 },
       ],
+      whoIsPosting: '',
+      //initial likes
       counts: 0,
+      //initial hearts
       count: 0,
-      whoIsPosting: ''
+
     };
   }
 
-
-  // displayDate = () => {
-  //   return new Date().toLocaleString()
-  // }
-
+  //increasing likes
   handleLikesClick = () => {
     this.setState(preState => { return { count: preState.count + 1 } });
   }
 
+  //increasing hearts
   handleEmojiClick = () => {
     this.setState(preState => { return { counts: preState.counts + 1 } });
   }
 
-
+  //displaying current user
   currentUser = (input) => {
     console.log(input)
     this.setState({ whoIsPosting: input })
   }
 
+  //handle create form change
   handleChange = (e) => {
     this.setState({ term: e.target.value });
   }
 
+  //handle create post form submit
   handleSubmit = (e) => {
     e.preventDefault();
     this.setState({
@@ -53,6 +56,7 @@ class PostBox extends Component {
 
   }
 
+  //Display create post box and passes data to posts.js
   render() {
     return (
       <React.Fragment>

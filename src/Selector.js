@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+//Selects multiple user
 class Selector extends Component {
   constructor(props) {
     super(props);

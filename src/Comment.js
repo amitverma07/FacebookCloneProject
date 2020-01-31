@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 
+//Creates comment box when user clicks on the comment button
 export default class Comment extends Component {
   constructor(props) {
     super(props);
@@ -26,16 +27,17 @@ export default class Comment extends Component {
 
   render() {
     const toggleComments = this.state.toggleComment;
-    const names=this.props.userNames;
+    const names = this.props.userNames;
     let button;
     if (toggleComments) {
       button = <form id="resets">
         <input type="text" onChange={this.handleChanges} className="form-control mt-3 mb-0" style={{ minWidth: "525px", marginLeft: "-16px" }}></input>
-        <button className="btn btn-primary mt-2" style={{ marginLeft: "400px", marginBottom: "-15px" }} type="button" onClick={this.handleCommentSubmit}>Post</button><div style={{ fontSize: "14px", color: "gray" }}>
-            <img src="https://i.pravatar.cc/300" alt="postimg" className="rounded-circle"
-              style={{ width: '40px', marginRight: '4px' }} />
-            <a href="#h"><b>{names}</b></a>
-          </div>
+        <button className="btn btn-primary mt-2" style={{ marginLeft: "400px", marginBottom: "-15px" }} type="button" onClick={this.handleCommentSubmit}>Post</button>
+        <div style={{ fontSize: "14px", color: "gray" }}>
+          <img src="https://i.pravatar.cc/300" alt="postimg" className="rounded-circle"
+            style={{ width: '40px', marginRight: '4px' }} />
+          <a href="#h"><b>{names}</b></a>
+        </div>
       </form>
     }
     return (
@@ -45,11 +47,6 @@ export default class Comment extends Component {
             <span className="glyphicon glyphicon-comment text-primary"></span> Comment
             </button>
           {button}
-          {/* <div style={{ fontSize: "14px", color: "gray" }}>
-            <img src="https://i.pravatar.cc/300" alt="postimg" className="rounded-circle"
-              style={{ width: '40px', marginRight: '4px' }} />
-            <a href="#h"><b>{this.props.userNames}</b></a>
-          </div> */}
           <p>{this.state.commentData}</p>
         </div>
       </div>

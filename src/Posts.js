@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import StaticPost from './StaticPost';
 import Comment from './Comment'
 
+//Creates post by maping and getting data as props from postbox.js and in the end creates few static posts
 class Posts extends Component {
   render() {
     const uname = this.props.userName;
@@ -57,7 +58,6 @@ class Posts extends Component {
         <StaticPost text="Have you wrote 10 lines of code without searching on google?" date="1/27/2020, 10:40:09 PM" likes={this.props.likeCount} comment={this.props.heartCount} likeclick={this.props.likeFun} emojiFun={this.props.emojiClick} userNames={uname} dName="Jawad" />
         <StaticPost text="Sorry Babe, Not Tonight, I'm Coding." date="1/28/2020, 12:00:00 AM" likes={this.props.likeCount} comment={this.props.heartCount} likeclick={this.props.likeFun} emojiFun={this.props.emojiClick} userNames={uname} dName="Jasmeet" />
         <StaticPost text="Computer Science is just math in disguise." date="1/27/2020, 1:00:00 AM" likes={this.props.likeCount} comment={this.props.heartCount} likeclick={this.props.likeFun} emojiFun={this.props.emojiClick} userNames={uname} dName="Christian" />
-
       </React.Fragment>
     );
   }
