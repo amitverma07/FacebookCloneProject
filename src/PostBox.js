@@ -1,37 +1,27 @@
 import React, { Component } from 'react'
 import Posts from './Posts'
+import Selector from './Selector';
 
 class PostBox extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      // value: []
-
-      items: [
-        // {
-        //   "id": 1,
-        // },
-        // {
-        //   "id": 2,
-        // },
-        // {
-        //   "id": 3,
-        // },
-        // {
-        //   "id": 4,
-        // },
-        // {
-        //   "id": 5,
-        // },
-        // {
-        //   "id": 6,
-        // },
-        // {
-        //   "id": 7,
-        // }
-      ],
+      items: [],
       term: "",
+      users: [
+        { name: "Amit Verma", id: 1 },
+        { name: "Dhruv", id: 2 },
+        { name: "Jawad", id: 3 },
+        { name: "Jasmeet", id: 4 },
+        { name: "Christian", id: 5 },
+      ],
+      whoIsPosting: ''
     };
+  }
+
+  currentUser = (input) => {
+    console.log(input)
+    this.setState({ whoIsPosting: input })
   }
 
   handleChange = (e) => {
@@ -54,6 +44,10 @@ class PostBox extends Component {
           <div className="d-flex justify-content-center">
             <div className="col-md-6">
               <div className="row">
+                <Selector usersData={this.state.users} whichUser={this.currentUser} />
+                <br />
+                <br />
+                <br />
                 <div className="col-md-12">
                   <div className="card">
                     <div className="card-header">
@@ -61,7 +55,7 @@ class PostBox extends Component {
                     </div>
                     <div className="row">
                       <div className="col-md-2" style={{ textAlign: 'right' }}>
-                        <img src="./amit.jpg" alt="postimg" className="rounded-circle" style={{ width: '44px', marginTop: '10px' }} />
+                        <img src="https://i.pravatar.cc/300" alt="postimg" className="rounded-circle" style={{ width: '44px', marginTop: '10px' }} />
                       </div>
                       <div className="col-md-10">
                         <form onSubmit={this.handleSubmit} id="form">
@@ -103,11 +97,10 @@ class PostBox extends Component {
                 </div>
               </div>
               <br />
-              <Posts type={this.state.items} />
+              <Posts type={this.state.items} userName={this.state.whoIsPosting}/>
             </div>
           </div>
         </div>
-
       </React.Fragment>
     );
   }

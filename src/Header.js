@@ -1,5 +1,4 @@
 import React from 'react';
-import Selector from './Selector';
 
 function Images(props) {
   return (<img src="./facebooklogo.PNG" style={props.style} alt="logoimage" />);
@@ -33,11 +32,10 @@ function Header() {
               <option>Sort User</option>
             </select>
           </div>
-          <Selector />
         </div>
       </nav>
     </React.Fragment>
   );
 }
 
-export default Header
+export default Header;
