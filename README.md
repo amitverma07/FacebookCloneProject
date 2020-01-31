@@ -13,7 +13,7 @@
 
 ### This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-![srceen shot](https://raw.githubusercontent.com/amitverma07/FacebookCloneProject/master/capture.PNG)
+![srceen shot](https://raw.githubusercontent.com/amitverma07/FacebookCloneProject/master/Capture.PNG)
 
 ## Technology Used
 
